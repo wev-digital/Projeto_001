@@ -1,0 +1,104 @@
+*{ /*TODO: Resetar as bordas da página*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{ /*TODO: Fundo da página*/
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(https://images8.alphacoders.com/136/thumb-1920-1363709.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+main{ /*TODO: Parte do conteúdo de login*/
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.397);
+    border: solid 2px rgba(255, 255, 255, 0.219); 
+    transform: translate(-50%,-50%);
+    backdrop-filter:  blur(5px);
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    max-height: 500px;
+    max-width: 500px;
+    height: 90vh;
+    width: 90vw;
+    top: 50%;  
+    left: 50%;
+}
+
+.title_logo{ /*TODO: Parte do logo da página*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.title_logo span{ /*TODO: Parte do icone da logo da página*/
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.title_logo h1{ /*TODO: Parte do title da logo da página*/
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+
+label{ /*TODO: Parte das especificações das inputs*/
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block;
+}
+
+input{ /*TODO: Parte dos campos de user*/
+    border: solid 2px rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 450px;
+    font-size: 16px;
+    width: 80vw;
+    height: 6vh;
+}
+
+input::placeholder{ /*TODO: modificação do texto no campo de user*/
+    position: absolute;
+    left: 2%;
+}
+
+input:focus{ /*TODO: Retirar a cor dos campos de user ao ser selecionado*/
+    outline: none;
+}
+
+ul{ /*TODO: Parte das opções das listas  de opções fora de login*/
+    justify-content: space-around;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+}
+
+ul li{ /*TODO: Parte das opções das listas  de opções fora de login*/
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+ul li a{ /*TODO: Parte das opções das listas  de opções fora de login*/
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 30px;
+    max-width: 450px;
+    width: 80vw;
+    height: 8vh;
+}
